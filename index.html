@@ -119,7 +119,7 @@
 </style>
 <section class="booking">
     <h2>🎧Book Mahakal DJ</h2>
-    <form action="#" method="POST">
+    <form id=bookingform>
         <label for="name">Your Name *</label>
         <input type="text" id="name" name="name" required placeholder="Enter your name">
 
@@ -137,7 +137,7 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="4" placeholder="Tell us about your event..."></textarea>
 
-        <button type="submit" class="btn btn-book">SEND BOOKING ON WHATSAPP</button>
+        <button type="button" class="btn btn-book" onclick="sendWhatsApp()">SEND BOOKING ON WHATSAPP</button>
     </form>
 </section>
 
@@ -251,3 +251,8 @@
         background: linear-gradient(90deg, #00c6ff, #0072ff);
     }
 </style>
+
+<script> 
+    `event.preventDefault();`
+    function sendWhatsApp(event) { const name = document.getElementById('name').value; const phone = document.getElementById('phone').value; const event = document.getElementById('event').value; const message = document.getElementById('message').value; const url = "[https://wa.me/9779827579031?text=](https://wa.me/9779827579031?text=)" + "Name: " + name + "%0A" + "Phone: " + phone + "%0A" + "Event: " + event + "%0A" + "Message: " + message; window.location.href = url; } </script>
+    let url = "[https://wa.me/9779827579031?text=](https://wa.me/9779827579031?text=)" + encodeURIComponent("Name: " + name + "%0A" + "Phone: " + phone + "%0A" + "Message: " + message);
