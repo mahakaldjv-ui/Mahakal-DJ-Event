@@ -1,1 +1,253 @@
-<!DOCTYPE html> <html lang="hi"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Mahakal DJ Event - बुकिंग</title> <style> body { font-family: sans-serif; background-color: #0d1117; color: #ffffff; margin: 0; padding: 20px; text-align: center; } header { padding: 40px 20px; background: linear-gradient(135deg, #00c6ff, #0072ff); border-radius: 15px; margin-bottom: 30px; } h1 { margin: 0; font-size: 2.5em; } p { font-size: 1.2em; color: #a1a8b3; } .services { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom: 40px; } .card { background-color: #161b22; padding: 20px; border-radius: 10px; border: 1px solid #30363d; } .button { display: inline-block; padding: 15px 30px; background-color: #238636; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px; } form { background-color: #161b22; padding: 30px; border-radius: 10px; border: 1px solid #30363d; max-width: 500px; margin: 0 auto; text-align: left; } label { display: block; margin-bottom: 5px; color: #8b949e; } input, select, textarea { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #30363d; border-radius: 5px; background-color: #0d1117; color: white; box-sizing: border-box; } button { width: 100%; padding: 15px; background-color: #2ea043; color: white; border: none; border-radius: 5px; font-size: 1em; cursor: pointer; } </style> </head> <body> <header> <h1>Mahakal DJ Event</h1> <p>आपके इवेंट को यादगार और धमाकेदार बनाएँ!</p> </header> <div class="services"> <div class="card"> <h3>Professional DJ</h3> <p>शादियों, पार्टियों और खास मौकों के लिए शानदार परफॉरमेंस।</p> </div> <div class="card"> <h3>DJ Lighting</h3> <p>प्रीमियम लाइट्स और स्टेज डेकोरेशन इफेक्ट्स।</p> </div> </div> <a href="#" class="button">WhatsApp पर बुक करें</a> <form> <h2>अभी बुक करें</h2> <label for="name">आपका नाम *</label> <input type="text" id="name" required> <label for="date">इवेंट की तारीख *</label> <input type="date" id="date" required> <label for="type">इवेंट का प्रकार *</label> <select id="type" required> <option value="wedding">शादी</option> <option value="party">पार्टी</option> <option value="other">अन्य</option> </select> <button type="submit">बुकिंग अनुरोध भेजें</button> </form> </body> </html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAHAKAL DJ</title>
+    <style>
+        body {
+            background-color: #0d0f12;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        .hero {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #1e0b3b 0%, #0d0f12 100%);
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00d2ff, #9d00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #b3b3b3;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            color: #ffffff;
+        }
+        .btn-book {
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+        }
+        .btn-whatsapp {
+            background-color: #25d366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        MAHAKAL DJ
+    </header>
+    <section class="hero">
+        <h1>MAKE YOUR EVENT UNFORGETTABLE</h1>
+        <p>Mahakal DJ provides premium DJ, powerful sound system, lighting, and complete event support.</p>
+        <a href="#book" class="btn btn-book">BOOK MAHAKAL DJ</a>
+        <a href="#whatsapp" class="btn btn-whatsapp">WHATSAPP BOOKING</a>
+    </section>
+</body>
+</html>
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-card">
+        <h3>DJ & Sound System</h3>
+        <p>Powerful DJ setup, high quality sound, bass and professional event audio system.</p>
+    </div>
+    <div class="service-card">
+        <h3>DJ Lighting</h3>
+        <p>Premium DJ lights, stage lighting and event atmosphere effects.</p>
+    </div>
+    <div class="service-card">
+        <h3>Professional DJ</h3>
+        <p>Energetic DJ performance for weddings, parties and special programs.</p>
+    </div>
+</section>
+
+<style>
+    .services {
+        padding: 60px 20px;
+        background-color: #0d0f12;
+        text-align: center;
+    }
+    .services h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        background: linear-gradient(90deg, #00d2ff, #9d00ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .service-card {
+        background-color: #161a22;
+        padding: 30px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #333;
+        transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+        transform: translateY(-5px);
+        border-color: #00d2ff;
+    }
+    .service-card h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+    .service-card p {
+        font-size: 16px;
+        color: #b3b3b3;
+        line-height: 1.6;
+    }
+</style>
+<section class="booking">
+    <h2>Book Mahakal DJ</h2>
+    <form action="#" method="POST">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="phone">Phone Number *</label>
+        <input type="text" id="phone" name="phone" value="+977" required placeholder="Enter your number">
+
+        <label for="event">Event Type *</label>
+        <select id="event" name="event" required>
+            <option value="">Select Event</option>
+            <option value="wedding">Wedding</option>
+            <option value="party">Party</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your event..."></textarea>
+
+        <button type="submit" class="btn btn-book">SEND BOOKING ON WHATSAPP</button>
+    </form>
+</section>
+
+<style>
+    .booking {
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #0d0f12 0%, #1e0b3b 100%);
+        text-align: center;
+    }
+    .booking h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #ffffff;
+    }
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #161a22;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: left;
+        border: 1px solid #333;
+    }
+    label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #0d0f12;
+        border: 1px solid #333;
+        border-radius: 5px;
+        color: #ffffff;
+        box-sizing: border-box;
+    }
+    input:focus, select:focus, textarea:focus {
+        border-color: #00d2ff;
+        outline: none;
+    }
+    .btn-book {
+        width: 100%;
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        border: none;
+        cursor: pointer;
+    }
+    .btn-book:hover {
+        background: linear-gradient(90deg, #0072ff, #00c6ff);
+    }
+      </style>
+      <section class="footer">
+    <h2>Contact Mahakal DJ</h2>
+    <div class="contact-card">
+        <p>WhatsApp</p>
+        <p>+977 9807540456</p>
+        <a href="https://wa.me/9779807540456" class="btn btn-whatsapp">CHAT NOW</a>
+    </div>
+    <div class="contact-card">
+        <p>TikTok</p>
+        <p>@mahakaldj</p>
+        <a href="#" class="btn btn-book">OPEN TIKTOK</a>
+    </div>
+    <div class="contact-card">
+        <p>Location</p>
+        <p>Kapilvastu, Nepal</p>
+    </div>
+    <p>&copy; 2026 Mahakal DJ. All Rights Reserved.</p>
+</section>
+
+<style>
+    .footer {
+        padding: 60px 20px;
+        background-color: #0d0f12;
+        text-align: center;
+        border-top: 1px solid #333;
+    }
+    .footer h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #ffffff;
+    }
+    .contact-card {
+        background-color: #161a22;
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #333;
+    }
+    .contact-card p {
+        font-size: 18px;
+        color: #b3b3b3;
+        margin: 10px 0;
+    }
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+        color: #ffffff;
+    }
+    .btn-whatsapp {
+        background-color: #25d366;
+    }
+    .btn-book {
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+    }
+</style>
